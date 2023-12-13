@@ -500,6 +500,11 @@ body{
         
     }
     
+    .sectionData div{
+        flex-direction: column;
+        align-items: start;
+    }
+
     td:not(:first-of-type){
         min-width: 10.1rem;
     }
