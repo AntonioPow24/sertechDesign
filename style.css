@@ -509,4 +509,8 @@ body{
     .calculator{
         width: 100%;
     }
+
+    .displays{
+        flex-direction: column;
+    }
 }
