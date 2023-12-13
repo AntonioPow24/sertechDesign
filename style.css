@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&family=Lato:wght@300&family=Nunito:ital,wght@0,300;1,200;1,300&family=Raleway:ital,wght@1,200&family=Roboto+Condensed:ital,wght@1,300&family=Roboto:wght@300&family=Ubuntu&display=swap');
+
+
+:root{
+    --blanco : #fff;
+    --backgroundHead:#d5d1defe;
+    --blueSertech:#263471;
+    --calculatorBtns:#828b7a;
+    --calculatorBtnsHover:#676f61;
+    --greenBtn:#43CB13;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+
+    min-height: 100vh;
+    background-image: url(/images/sertech.jpg);
+    background-size: cover;
+}
+
+.container{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* ---------------- SECCION HEADER -------------- */
+
+.head{
+    display: flex;
+    gap: 1rem;
+    background-color: var(--backgroundHead);
+    padding: 15px 30px;
+}
+
+
+/* Todos los hijos Div */
+.head > section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+/* Logo */
+.head .logo{
+
+    align-items: center;
+    width: 10%;
+}
+
+
+/* About */
+.head .about{
+    text-align: center;
+    font-size: 1.5rem;
+    width: 35%;
+    border-radius: 5px;
+    background-color: var(--blueSertech);
+    border:1px inset #000 ;
+    overflow: hidden;
+}
+.about .version{
+    width: 100%;
+    height: 40%;
+    padding: 5px 0;
+    color: var(--blanco);
+    letter-spacing: 1px;
+   
+}
+.about .title{
+    
+    height: 65%;
+    width: 100%;
+    background-color: var(--backgroundHead);
+    padding:5px 0 15px 0;
+}
+.about .title p{
+    letter-spacing: 2px;
+}
+
+
+    /* Data System */
+.head .dataSystem{
+    font-size: 1.2rem;
+    padding: .8rem 0;
+    background-color: var(--blueSertech);
+    color: var(--blanco);
+    border-radius: 5px;
+    width: 25%;
+}
+.dataSystemItem{
+    width: 100%;
+}
+.dataSystemItem span{
+
+    margin: 2px 0 ;
+    
+    display: inline-block;
+
+}
+
+.dataSystemItem span:nth-child(2){
+    margin-left:10%;
+    width: 40%;
+}
+.dataSystemItem span:first-child{
+    padding-left:18%;
+    width: 50%;
+}
+
+
+
+
+/* Comprobante */
+.head .comprobant{
+    color: var(--blanco);
+    border-radius: 5px;
+    background-color: var(--blueSertech);
+    border:1px inset #000 ;
+    justify-content: center;
+    font-size: 1.7rem;
+    width: 25%;
+}
+
+.comprobant .comprobantTitle{
+    
+    padding: 5px 0;
+}
+.comprobantContent{
+    color: #fe9915;
+    font-weight: bold;
+}
+
+
+
+
+
+
+/* --------- SECCION MAIN --------- */
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff5;
+    backdrop-filter: blur(7px);
+    box-shadow: 0 .4rem .8rem #0005;
+    border-radius: .8rem;
+    overflow: hidden;
+    margin: 2rem 2rem ;
+    min-height: 440px;
+}
+
+
+/* Seccion data */
+.principal .sectionData{
+    padding: 1.5rem 2rem;
+    display: flex;
+    font-size: 1.3rem;
+
+}
+    /* todos los divs del Section Data */
+.sectionData div{
+    margin: 2px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+    /* Main data */
+.mainData{
+    width: 60%;
+    flex-direction: column;
+}
+.email{
+
+    flex: 1;
+}
+.mainData > div{
+    width: 100%;
+
+}
+.itemData{
+    flex: 1;
+    padding: 5px 0 ;
+}
+
+
+/* Tabla */
+
+/* Contenedor */
+.tableContainer{
+    margin: 1rem auto;
+    width: 96.5%;
+    max-height: 89% - 1rem;
+    background-color:#fff9 ;
+    border-radius: .6rem;
+    overflow: auto;
+    font-size: 1.2rem;
+}
+
+/* Scroll bar responsive */
+.tableContainer::-webkit-scrollbar{
+    width: 0.5rem;
+    height: 0.9rem;
+}
+.tableContainer::-webkit-scrollbar-thumb{
+    border-radius: .5rem;
+    background-color: #0004;
+    visibility: hidden;
+}
+.tableContainer:hover::-webkit-scrollbar-thumb{
+    border-radius: .5rem;
+    background-color: #0004;
+    visibility: visible;
+}
+
+
+.table {
+    min-width: 100%;
+    text-align: center;
+}
+  
+.table ,th , td{
+    border-collapse: collapse;
+    padding: 1rem;
+}
+
+.tHead th{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: var(--backgroundHead);
+}
+
+.tBody tr:nth-child(even){
+    background-color: #0000000b;
+}
+.tBody tr:hover{
+    background-color: #fff6;
+}  
+
+
+
+
+
+
+/* --------------- CALCULADORA ------------- */
+
+.operations{
+    display: flex;
+    gap: 2rem;
+    margin: 0 2rem ;
+}
+
+.calculator{
+    border-radius: .8rem;
+    background-color: #fff5;
+    backdrop-filter: blur(7px);
+    box-shadow: 0 .4rem .8rem #0005;
+    padding: 1rem 2rem;
+    
+}
+.elements{
+    display: grid;
+    grid-template-columns: repeat(6,minmax(65px,1fr)) ;
+    grid-template-rows: repeat(4,minmax(50px ,1fr));
+    grid-gap: .5rem;
+    height: 100%;
+}
+
+.elements > *{
+    border: none;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.elements >button{
+    cursor: pointer;
+    background-color:var(--calculatorBtns);
+}
+.elements >button:hover{
+    background-color: var(--calculatorBtnsHover);
+}
+.elements >input{
+    background-color: #ddd;
+    grid-column: 4/7;
+}
+
+.elements >button:nth-child(10){
+    background-color: #ac371a
+}
+.elements >button:nth-child(14){
+    background-color: #a9ac1a;
+    grid-column: 4/7;
+}
+.elements >button:last-child{
+    background-color: #83cb4b;
+    grid-column: 4/7;
+}
+
+
+
+
+
+/* --------- TASKS --------  */
+
+.tasks{
+    border-radius: .8rem;
+    background-color: #fff5;
+    backdrop-filter: blur(7px);
+    box-shadow: 0 .4rem .8rem #0005;
+    padding: 1rem 2rem;
+    flex: 1;
+}
+
+    /* Displays */
+.displays{
+    display: flex;
+    gap: .5rem; 
+    margin-bottom: 1rem;
+}
+.displays > div{
+    font-weight: bold;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 2rem;
+    color: var(--blanco);
+    flex: 1;
+    background-color: #0c1b52;
+}
+
+.displayDetail{
+    align-items: start;
+    
+    
+}
+.displayDetail> span{
+    margin-left: 20%;
+    padding: 3px 0;
+    font-size: 1.1rem;
+}
+
+.displayTotal{
+    align-items: center;
+    font-size: 2rem;
+}
+
+
+
+    /* botones de Tasks */
+
+    .taskItems{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+
+        grid-gap: .5rem;
+    }
+
+    .taskItems > button {
+        min-height: 60px;
+        text-transform:capitalize;
+        font-size: .8rem;
+        text-align: center;
+        padding:0 1rem;
+        border-radius: 8px;
+        border: none;
+    }
+
+    .taskItems >button:last-child{
+        background-color: #b53b3b;
+    }
+    .taskItems >button:nth-last-child(2){
+        background-color:var(--greenBtn) ;
+    }
+
+
+
+
+
+@media screen and (max-width: 1100px) {
+    .principal .sectionData{
+        flex-direction: column;
+    }
+
+    .mainData{
+        width: 100%;
+    }
+
+
+    td:not(:first-of-type){
+        min-width: 12.1rem;
+    }
+
+    .head .logo{
+        display: none;
+    }
+    .head{
+        flex-wrap: wrap;
+        gap: .2rem;
+    }
+    .head .dataSystem, .head .comprobant{
+        justify-content: center;
+        width: 49.7%;
+        
+    }
+
+    .head .about{
+        display: block;
+        width: 100%;
+    }
+    .head .dataSystem{
+        font-size: 1rem;
+    }
+
+    .displayDetail> span{
+        font-size: .7rem;
+        margin-left: -10%;
+    }
+
+    .displayTotal{
+        font-size: 1rem;
+    }
+    .taskItems{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(90px,1fr));
+
+        grid-gap: .5rem;
+    }
+
+
+}
+
+
+@media  screen and (max-width:999px) {
+    .operations{
+        flex-direction: column;
+    }
+    .displayDetail> span{
+        font-size: .7rem;
+        margin-left: 10%;
+    }
+    .displayTotal{
+        font-size: 1.6rem;
+    }
+}
+
+
+
+
+@media screen and (max-width: 620px){
+    .head .dataSystem, .head .comprobant{
+        justify-content: center;
+        width: 49.6%;
+        
+    }
+    .about .title{
+        padding-bottom: 35px;
+    }
+    .head .dataSystem{
+        font-size: 1rem;
+        padding-right: 25px;
+        
+    }
+    
+    td:not(:first-of-type){
+        min-width: 10.1rem;
+    }
+    .table{
+        font-size: 1rem;
+    }
+    .calculator{
+        width: 100%;
+    }
+}

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <div class="container">
+        <header class="head">
+            <!-- Logo -->
+            <section class="logo">SERTECH
+            </section>
+
+            <!--Seccion Acerca del Sistema-->
+            <section class="about">
+                <div class="version">
+                    <p>HardSoft Admin POS v. 9.0</p>
+                </div>
+                <div class="title">
+                    <p>SAUCEDO COLEMAN MARIA DEL PILAR</p>
+                    <p>*** EL CHASQUI ***</p>
+                </div>
+            </section>
+
+            <!-- Detalles -->
+            <section class="dataSystem">
+                <div class="dataSystemItem">
+                    <span>Terminal</span><span>:CAJA01</span>
+                </div>
+                <div class="dataSystemItem">
+                    <span>Usuario</span><span>:MAÑANA</span>
+                </div>
+                <div class="dataSystemItem">
+                    <span>Fecha Sistema</span><span>:06/12/2023</span>
+                </div>
+                <div class="dataSystemItem">
+                    <span>Terminal</span><span>:06/12/2023</span>
+                </div>
+                
+                
+                
+                
+            </section>
+
+            <!-- Comprobante -->
+            <section class="comprobant" id="comprobant">
+                <div  class="comprobantTitle">
+                    <span>Bol. Electronica</span>
+                </div>
+                <div class="comprobantContent">
+                    <span>B103-0076682</span>
+                </div>
+            </section>
+
+        </header>
+
+        <main class="principal" id="principal">
+            <section class="sectionData">
+                <div class="mainData">
+                    <div class="identity">
+                        <div class="itemData">
+                            <p>RUC/DNI:</p><span>------------</span>
+                        </div>
+                        <div class="itemData">
+                            <p>Nombre:</p><span>----</span>
+                        </div>
+                    </div>
+                    <div class="address itemData">
+                        <p>Direccion:</p><span>----</span>
+                    </div>
+                    
+                </div>
+                
+                <div class="email itemData">
+                    <p>email:</p><span>------</span>
+                </div>
+            </section>
+
+            <div class="tableContainer">
+                <table class="table" id="table">
+                    <thead class="tHead">
+                      <tr>
+                        <th>Item</th>
+                        <th>Cód. Barras</th>
+                        <th>Descripción</th>
+                        <th>Cant</th>
+                        <th>Precio Unitario</th>
+                        <th>Precio 2</th>
+                        <th>Total</th>
+                      </tr>
+                    </thead>
+                    <tbody class="tBody" id="tBody">
+                      <tr>
+                        <td>Agua</td>
+                        <td>3F7StdYR84759D</td>
+                        <td>Agua 300ml Cielo</td>
+                        <td>2</td>
+                        <td><strong>S/. 4.00</strong></td>
+                        <td><strong>S/. 4.00</strong></td>
+                        <td>S/. 8.00</td>
+                      </tr>
+                      <tr>
+                        <td>Agua</td>
+                        <td>3F7StdYR84759D</td>
+                        <td>Agua 300ml Cielo</td>
+                        <td>2</td>
+                        <td><strong>S/. 4.00</strong></td>
+                        <td><strong>S/. 4.00</strong></td>
+                        <td>S/. 8.00</td>
+                      </tr>
+                      <tr>
+                        <td>Agua</td>
+                        <td>3F7StdYR84759D</td>
+                        <td>Agua 300ml Cielo</td>
+                        <td>2</td>
+                        <td><strong>S/. 4.00</strong></td>
+                        <td><strong>S/. 4.00</strong></td>
+                        <td>S/. 8.00</td>
+                      </tr>
+                      <tr>
+                        <td>Agua</td>
+                        <td>3F7StdYR84759D</td>
+                        <td>Agua 300ml Cielo</td>
+                        <td>2</td>
+                        <td><strong>S/. 4.00</strong></td>
+                        <td><strong>S/. 4.00</strong></td>
+                        <td>S/. 8.00</td>
+                      </tr>
+                      <tr>
+                        <td>Agua</td>
+                        <td>3F7StdYR84759D</td>
+                        <td>Agua 300ml Cielo</td>
+                        <td>2</td>
+                        <td><strong>S/. 4.00</strong></td>
+                        <td><strong>S/. 4.00</strong></td>
+                        <td>S/. 8.00</td>
+                      </tr>
+                      <tr>
+                        <td>Agua</td>
+                        <td>3F7StdYR84759D</td>
+                        <td>Agua 300ml Cielo</td>
+                        <td>2</td>
+                        <td><strong>S/. 4.00</strong></td>
+                        <td><strong>S/. 4.00</strong></td>
+                        <td>S/. 8.00</td>
+                      </tr>
+                      <!-- Comentar o descomentar esta fila no debería afectar el diseño de los encabezados -->
+                    </tbody>
+                  </table>
+            </div>
+        </main>
+
+        <section class="operations">
+
+            <section class="calculator" id="calculator">
+                
+                <div class="elements" id="elements">
+                    <button data-value="7">7</button>
+                    <button data-value="8">8</button>
+                    <button data-value="9">9</button>
+                    <input type="text" class="displayCalculator">
+
+                    <button data-value="6">6</button>
+                    <button data-value="5">5</button>
+                    <button data-value="4">4</button>
+                    <button data-value="+">+</button>
+                    <button data-value="-">-</button>
+                    <button data-value="delete"><i class='bx bx-left-arrow-alt'></i></button>
+
+                    <button data-value="3">3</button>
+                    <button data-value="2">2</button>
+                    <button data-value="1">1</button>
+                    <button data-value="clean">LIMPIAR</button>
+
+                    <button data-value="0">0</button>
+                    <button data-value=".">1</button>
+                    <button data-value="*">*</button>
+                    <button data-value="enter">ENTER</button>
+                </div>
+            </section>
+
+
+            <section class="tasks" id="tasks">
+                <div class="displays">
+                    <div class="displayDetail" id="displayDetail">
+                        <span>NUMERO DE ITEMS : 00</span>
+                        <span>CANTIDAD DE PRODUCTOS : 00</span>
+                        <span>TOTAL AHORRO : 00</span>
+                        <span>PUNTOS ACUMULADOS : 00</span>
+                    </div>
+                    <div class="displayTotal" id="displayTotal">
+                        <span id="totalTask">TOTAL S/.1.00</span>
+                    </div>
+                </div>
+
+                <div class="taskItems">
+                    <button data-task="searchProduct">buscar producto</button>
+                    <button data-task="searchClient">buscar cliente</button>
+                    <button data-task="deleteConsult">consultar anular</button>
+                    <button data-task="deleteItem">eliminar item</button>
+                    <button data-task="cleanDisplay">limpiar pantalla</button>
+                    <button data-task="tactilSell">venta tactil</button>
+                    <button data-task="otherTask">other task</button>
+                    <button data-task="otherTask2">other task2</button>
+                    <button data-task="generalDiscount">descuento gen.</button>
+                    <button data-task="indDiscount">descuento ind.</button>
+                    <button data-task="newClient">nuevo cliente</button>
+                    <button data-task="otherTask3">other task 3</button>
+                    <button data-task="otherTask4">other task 4</button>
+                    <button data-task="greenTask">green task</button>
+                    <button data-task="lastTask">last task</button>
+
+                    
+                </div>
+            </section>
+        </section>
+    </div>
+</body>
+</html>
