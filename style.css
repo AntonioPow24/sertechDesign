@@ -8,6 +8,9 @@
     --calculatorBtns:#828b7a;
     --calculatorBtnsHover:#676f61;
     --greenBtn:#43CB13;
+    --greenBtnHover:#3EAC18;
+    --taskBtns:#BEC8BF;
+    --taskBtnsHover:#A9B0A9;
 
 }
 
@@ -299,13 +302,23 @@ body{
 .elements >button:nth-child(10){
     background-color: #ac371a
 }
+.elements >button:nth-child(10):hover{
+    background-color: #95351d
+}
 .elements >button:nth-child(14){
     background-color: #a9ac1a;
     grid-column: 4/7;
 }
+.elements >button:nth-child(14):hover{
+    background-color: #8d8f15;
+
+}
 .elements >button:last-child{
     background-color: #83cb4b;
     grid-column: 4/7;
+}
+.elements >button:last-child:hover{
+    background-color: #6aa93a;
 }
 
 
@@ -369,6 +382,8 @@ body{
     }
 
     .taskItems > button {
+        cursor: pointer;
+        background-color: var(--taskBtns);
         min-height: 60px;
         text-transform:capitalize;
         font-size: .8rem;
@@ -377,12 +392,22 @@ body{
         border-radius: 8px;
         border: none;
     }
+    .taskItems > button:hover {
+        background-color: var(--taskBtnsHover);
+    }
+
 
     .taskItems >button:last-child{
         background-color: #b53b3b;
     }
+    .taskItems >button:last-child:hover{
+        background-color: #9d3131;
+    }
     .taskItems >button:nth-last-child(2){
         background-color:var(--greenBtn) ;
+    }
+    .taskItems >button:nth-last-child(2):hover{
+        background-color:var(--greenBtnHover) ;
     }
 
 
