@@ -422,7 +422,7 @@ body{
 
 /* contenedor */
 .window{
-    /* display:none; */
+    display:none;
     width:100vw;
     height:100vh;
     position:fixed;
@@ -430,6 +430,10 @@ body{
     top:0;
     left:0;
     color: #000;
+}
+
+.window--active{
+    display: block;
 }
 
 
